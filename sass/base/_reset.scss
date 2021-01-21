@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: $font-main;
+  // color: $dark-gray;
+  animation-name: BottomToTop;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+section {
+  padding: 6rem 8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: block;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  border: 1px solid $pink;
+  width: 80px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: $font-logo;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+
+  animation-name: RightToLeft;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-family: $font-main2;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: $font-main2;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-family: $font-main2;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-family: $font-par2;
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 2.2rem;
+  font-family: $font-par;
+}
+
+img {
+  animation-duration: 1s;
+}
+
+i {
+  animation-duration: 1s;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 2rem 6rem;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 2rem 3rem;
+  }
+
+  hr {
+    border: 1px solid $pink;
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 1rem 3rem;
+  }
+
+  hr {
+    border: 1px solid $pink;
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h4 {
+    font-size: 1.8rem;
+  }
+  
+  p {
+    font-size: 1.7rem;
+  }
+}

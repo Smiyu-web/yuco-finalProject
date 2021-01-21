@@ -1,0 +1,50 @@
+header {
+
+  nav {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .main_menu {
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      color: $lighter-gray;
+      margin-left: 2rem;
+
+
+      li {
+        padding: .5rem .8rem;
+      }
+    }
+  }
+
+  li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+  }
+
+  a {
+    @include aTab;
+
+    &::after {
+      @include aTabAfter;
+    }
+
+    &:hover::after {
+      @include aTabHoverAfter;
+    }
+  }
+
+}

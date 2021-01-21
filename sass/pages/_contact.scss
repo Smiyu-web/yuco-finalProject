@@ -1,0 +1,68 @@
+#contact {
+  
+  .contact_page {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+  }
+
+  .logo {
+    margin-left: 50rem;
+    text-align: center;
+  }
+  
+  .info {
+    // width: 50%;
+    margin: 2rem;
+    display: block;
+    justify-items: center;
+
+    div {
+      display: flex;
+    }
+
+    h5 {
+      margin-right: 4rem;
+      margin-top: 1rem;
+    }
+  }
+
+  iframe {
+    width: 40vw;
+  }
+
+  // .subscribe {
+  //   margin: 4rem;
+
+  //   // h5 {
+  //   //   margin-bottom: 4rem;
+  //   //   font-size: 2rem;
+  //   // }
+  // }
+
+  // .submit {
+  //   display: flex;
+  //   justify-content: center;
+  //   height: 30px;
+  // }
+
+  .submit {
+    margin-top: 2rem;
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #contact {
+
+    .contact_page {
+      margin: 0;
+    }
+
+    .logo {
+      margin-left: 20rem;
+      text-align: center;
+    }
+  }
+}

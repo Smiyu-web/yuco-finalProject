@@ -1,0 +1,61 @@
+.ct_form {
+  position: relative;
+  width: 100%;
+  margin-right: 40px;
+
+  .input {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    letter-spacing: 1px;
+    padding-left: 4em;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+}
+
+.input {
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1.5px solid $pink;
+  background-color: transparent;
+
+  & ~ .focus_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.4s;
+    background-color: $pink;
+  }
+
+  & ~ label {
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    color: $dark-gray;
+  }
+
+}
+
+.input:focus ~ .focus_line,
+.ct_form.input ~ .focus_line {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.input:focus ~ label, .ct_form.input ~ label {
+  font-size: 12px;
+  top: -16px;
+  transition: 0.3s;
+  color: $pink;
+}
+
+label {
+  font-family: $font-par2;
+}
