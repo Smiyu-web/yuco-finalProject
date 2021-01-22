@@ -29,20 +29,27 @@
       <div class="logo">
         <h1>YU + CO.</h1>
       </div>
-      <ul class="main_menu">
-        <li><a href="#">home</a></li>
-        <li><a href="#feature">about us</a></li>
-        <li><a href="#brand">brand</a></li>
-        <li><a href="#gallery">gallery</a></li>
-        <li><a href="#contact">contact</a></li>
-        <ul>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-facebook-square"></i></li>
+      <div class="pc-menu">
+        <ul class="main_menu">
+          <li><a href="#">home</a></li>
+          <li><a href="#feature">about us</a></li>
+          <li><a href="#brand">brand</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#contact">contact</a></li>
+          <ul>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook-square"></i></li>
+          </ul>
         </ul>
-      </ul>
+      </div>
+
+    <!-- ---- hamburger icon ---- -->
+    <div class="sp-menu">
+      <i id="open" class="fas fa-bars"></i>
+    </div>
     </nav>
-    <!-- ------------------ nav end ------------------ -->
+
 
     <div id="main">
       <img id="main_img" src="src/img/top.jpg" alt="yu+co.">
@@ -50,7 +57,27 @@
   </header>
   <!-- ------------------ header end ------------------ -->
 
-  <!-- <div class="for-scroll"></div> -->
+  <!-- ------------------ hamburger start ------------------ -->
+  <div class="overlay">
+    <i id="close" class="fas fa-times"></i>
+    <nav>
+      <ul class="main_menu" id="close_two" onclick="clickedMenu()">
+        <li><a href="#">home</a></li>
+        <li><a href="#feature">about us</a></li>
+        <li><a href="#brand">brand</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#contact">contact</a></li>
+        <ul class="sns">
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook-square"></i></li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ------------------ humbarger end ------------------ -->
+
   <div id="js-scroll-top" class="scroll-top"><i class="fas fa-angle-up"></i></div>
 
   <!-- ------------------ feature start ------------------ -->
@@ -353,31 +380,14 @@
     </div>
     <div class="contact_page">
 
-      <!-- <div class="left">
-        <div class="ct_form">
-          <input class="input" id="name" type="text" placeholder="">
-          <label>name.</label>
-          <span class="focus_line"></span>
-        </div>
-        <div class="ct_form">
-          <input class="input" id="email" type="text" placeholder="">
-          <label>email.</label>
-          <span class="focus_line"></span>
-        </div>
-        <div class="ct_form">
-          <textarea class="input" id="msg" cols="50" rows="3"></textarea>
-          <label>message.</label>
-          <span class="focus_line"></span>
-        </div>
-        <div class="buttons-coll">
-          <button class="btn btn-submit">send</button>
-        </div>
-      </div> -->
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.7585354091043!2d-123.12212064882812!3d49.28097247922971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671821c149771%3A0xd64c377f2df4b19f!2sCornerstone%20International%20Community%20College%20of%20Canada%20-%20Tech%20Campus!5e0!3m2!1sen!2sca!4v1611104177123!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       
-
+      <div class="logo1">
+        <h1>YU + CO.</h1>
+        <hr />
+      </div>
       <div class="info">
         <div>
           <h5>Address&nbsp;</h5>
@@ -407,27 +417,14 @@
               <label>Email.</label>
               <span class="focus_line"></span>
             </div>
-            <button class="btn btn-submit">send</button>
+            <div class="send">
+              <button class="btn btn-submit">send</button>
+            </div>
           </div>
         </div>
       </div>
+   </div>
 
-
-    </div>
-    <!-- <div class="subscribe">
-      <h5>Subscribe</h5>
-      <div class="submit">
-        <div class="ct_form">
-          <input class="input" id="email" type="text" placeholder="">
-          <label>email.</label>
-          <span class="focus_line"></span>
-        </div>
-        <div class="buttons-coll">
-          <button class="btn btn-submit">send</button>
-        </div>
-      </div>
-    </div> -->
-    
   </section>
   <!-- ------------------ contact end ------------------ -->
 

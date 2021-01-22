@@ -2,17 +2,19 @@
   
   .contact_page {
     display: flex;
-    justify-content: space-between;
-    margin: 0 4rem;
+    justify-content: space-around;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
   }
 
   .logo {
-    margin-left: 50rem;
+    margin-left: 40rem;
     text-align: center;
   }
   
   .info {
-    // width: 50%;
     margin: 2rem;
     display: block;
     justify-items: center;
@@ -31,30 +33,31 @@
     width: 40vw;
   }
 
-  // .subscribe {
-  //   margin: 4rem;
-
-  //   // h5 {
-  //   //   margin-bottom: 4rem;
-  //   //   font-size: 2rem;
-  //   // }
-  // }
-
-  // .submit {
-  //   display: flex;
-  //   justify-content: center;
-  //   height: 30px;
-  // }
-
   .submit {
     margin-top: 2rem;
     flex-direction: column;
+  }
 
+  .send {
+    justify-content: flex-end;
+  }
+
+  .logo1 {
+    display: none;
   }
 }
 
 @media screen and (max-width: 1200px) {
   #contact {
+
+    .contact_page {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .info {
+      margin: 2rem 0;
+    }
 
     .contact_page {
       margin: 0;
@@ -64,5 +67,70 @@
       margin-left: 20rem;
       text-align: center;
     }
+
+    .logo1 {
+      display: none;
+    }
+
+    iframe {
+      height: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #contact {
+    .logo {
+      display: none;
+    }
+
+    .logo1 {
+      margin-top: 2rem;
+      margin-left: 3rem;
+      display: block;
+
+      hr {
+        margin-left: 5rem;
+      }
+    }
+
+    .contact_page {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .map {
+      display: flex;
+      justify-content: center;
+    }
+
+    .info {
+      margin: 1rem 10rem;
+    }
+
+    iframe {
+      width: 80%;
+      height: 350px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+
+    .info {
+      margin: 1rem 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    iframe {
+      width: 90%;
+      height: 250px;
+    }
+
   }
 }

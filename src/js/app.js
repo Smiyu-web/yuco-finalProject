@@ -22,3 +22,30 @@ PageTopBtn.addEventListener('click', () =>{
     behavior: 'smooth'
   });
 });
+
+// hamburder menu
+const open = document.getElementById('open');
+const overlay = document.querySelector('.overlay');
+const close = document.getElementById('close');
+const close_two = document.getElementById('close_two');
+
+
+open.addEventListener('click', () => {
+  overlay.classList.add('show');
+  open.classList.add('hide');
+});
+
+close.addEventListener('click', () => {
+  overlay.classList.remove('show');
+  open.classList.remove('hide');
+});
+
+close_two.addEventListener('click', () => {
+  // overlay.classList.remove('show');
+  // open.classList.remove('hide');
+});
+
+const clickedMenu = () => {
+  overlay.classList.remove('show');
+  open.classList.remove('hide');
+}

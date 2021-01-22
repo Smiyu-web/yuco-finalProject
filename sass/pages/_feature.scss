@@ -69,7 +69,7 @@
   #feature {
   
     i {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
 
     hr {
@@ -77,12 +77,16 @@
     }
 
     h3 {
-      margin-left: 1.5rem;
-      margin-bottom: 2rem;
+      margin-left: 0;
+      margin-bottom: 1rem;
     }
-  
-    p {
-      margin-left: 1.5rem;
+
+    .feature_cards {
+      margin-top: 0;
+    }
+
+    .feature_card {
+      padding: 0 1rem;
     }
   }
 }

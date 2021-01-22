@@ -20,11 +20,10 @@
     cursor: pointer;
 
     .caption {
-      // @include caption;
       text-align: center;
       color: $white;
       font-family: $font-main2;
-      font-size: 130%;
+      font-size: 1.3rem;
     }
 
     .mask {
@@ -60,23 +59,12 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #brand {
-
-  }
-}
-
 @media screen and (max-width: 800px) {
   #brand {
   
     .brand_img {
-      height: auto;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-  
       .caption {
-        font-size: 100%;
+        font-size: 1rem;
       }
     }
   
@@ -88,6 +76,19 @@
   
     hr {
       margin: 1rem 0 1rem 1rem;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #brand {
+    p {
+      font-size: .8rem;
+    }
+
+    .brand_img {
+      .caption {
+        font-size: .8rem;
+      }
     }
   }
 }

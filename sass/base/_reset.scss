@@ -4,7 +4,6 @@
   box-sizing: border-box;
 
   font-family: $font-main;
-  // color: $dark-gray;
   animation-name: BottomToTop;
   animation-duration: 0.3s;
   animation-timing-function: linear;
@@ -83,6 +82,11 @@ i {
   animation-duration: 1s;
 }
 
+label {
+  font-family: $font-par2;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1200px) {
   section {
     padding: 2rem 6rem;
@@ -95,7 +99,6 @@ i {
   h2 {
     font-size: 3rem;
     margin-bottom: 2.5rem;
-
   }
   
   h3 {
@@ -105,9 +108,22 @@ i {
   h4 {
     font-size: 1.5rem;
   }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
   
   p {
     font-size: 1.7rem;
+  }
+
+  label {
+    font-size: 1rem;
   }
 }
 
@@ -117,7 +133,6 @@ i {
   }
 
   hr {
-    border: 1px solid $pink;
     width: 60px;
   }
 
@@ -137,21 +152,33 @@ i {
   h4 {
     font-size: 1.2rem;
   }
+
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: .9rem;
+    margin-top: 2rem;
+  }
   
   p {
     font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
   }
 }
 
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 
   hr {
-    border: 1px solid $pink;
-    width: 60px;
+    width: 40px;
   }
 
   h1 {
@@ -159,20 +186,32 @@ i {
   }
   
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-
   }
   
   h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   
   h4 {
-    font-size: 1.8rem;
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+    margin-top: 2rem;
   }
   
   p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: .8rem;
   }
 }
