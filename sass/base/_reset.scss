@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 6rem;
 
   animation-name: RightToLeft;
@@ -49,28 +49,28 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.6vw;
   font-family: $font-main2;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2vw;
   font-family: $font-main2;
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: $font-main2;
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: $font-par2;
   margin-top: 2rem;
 }
 
 p {
-  font-size: 2.2rem;
+  font-size: 2vw;
   font-family: $font-par;
 }
 
@@ -84,7 +84,7 @@ i {
 
 label {
   font-family: $font-par2;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -97,34 +97,13 @@ label {
   }
   
   h2 {
-    font-size: 3rem;
     margin-bottom: 2.5rem;
   }
   
-  h3 {
-    font-size: 2rem;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1.1rem;
-  }
-  
   h6 {
-    font-size: 1rem;
     margin-top: 2rem;
   }
   
-  p {
-    font-size: 1.7rem;
-  }
-
-  label {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -136,39 +115,10 @@ label {
     width: 60px;
   }
 
-  h1 {
-    font-size: 3.1rem;
-  }
-  
   h2 {
-    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
-  
-  h3 {
-    font-size: 1.3rem;
-  }
-  
-  h4 {
-    font-size: 1.2rem;
-  }
 
-  h5 {
-    font-size: 1rem;
-  }
-  
-  h6 {
-    font-size: .9rem;
-    margin-top: 2rem;
-  }
-  
-  p {
-    font-size: 1.5rem;
-  }
-
-  label {
-    font-size: 1rem;
-  }
 }
 
 
@@ -180,35 +130,18 @@ label {
   hr {
     width: 40px;
   }
-
-  h1 {
-    font-size: 3.1rem;
-  }
   
   h2 {
-    font-size: 2rem;
     margin-bottom: 1rem;
-  }
-  
-  h3 {
-    font-size: 1rem;
-  }
-  
-  h4 {
-    font-size: 1rem;
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   
   h6 {
-    font-size: 1rem;
     margin-top: 2rem;
-  }
-  
-  p {
-    font-size: 1.2rem;
+    font-size: .8rem;
   }
 
   label {

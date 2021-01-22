@@ -32,31 +32,31 @@ h1 {
   font-family: "Covered By Your Grace", cursive; }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 6rem;
   animation-name: RightToLeft;
   animation-duration: .5s;
   animation-timing-function: linear; }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.6vw;
   font-family: "Marcellus", serif; }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2vw;
   font-family: "Marcellus", serif; }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: "Marcellus", serif; }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Roboto Slab", serif;
   margin-top: 2rem; }
 
 p {
-  font-size: 2.2rem;
+  font-size: 2vw;
   font-family: "Tangerine", cursive; }
 
 img {
@@ -67,7 +67,7 @@ i {
 
 label {
   font-family: "Roboto Slab", serif;
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 @media screen and (max-width: 1200px) {
   section {
@@ -75,67 +75,30 @@ label {
   h1 {
     font-size: 3.1rem; }
   h2 {
-    font-size: 3rem;
     margin-bottom: 2.5rem; }
-  h3 {
-    font-size: 2rem; }
-  h4 {
-    font-size: 1.5rem; }
-  h5 {
-    font-size: 1.1rem; }
   h6 {
-    font-size: 1rem;
-    margin-top: 2rem; }
-  p {
-    font-size: 1.7rem; }
-  label {
-    font-size: 1rem; } }
+    margin-top: 2rem; } }
 
 @media screen and (max-width: 800px) {
   section {
     padding: 2rem 3rem; }
   hr {
     width: 60px; }
-  h1 {
-    font-size: 3.1rem; }
   h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem; }
-  h3 {
-    font-size: 1.3rem; }
-  h4 {
-    font-size: 1.2rem; }
-  h5 {
-    font-size: 1rem; }
-  h6 {
-    font-size: .9rem;
-    margin-top: 2rem; }
-  p {
-    font-size: 1.5rem; }
-  label {
-    font-size: 1rem; } }
+    margin-bottom: 1rem; } }
 
 @media screen and (max-width: 480px) {
   section {
     padding: 1rem 2rem; }
   hr {
     width: 40px; }
-  h1 {
-    font-size: 3.1rem; }
   h2 {
-    font-size: 2rem;
     margin-bottom: 1rem; }
-  h3 {
-    font-size: 1rem; }
-  h4 {
-    font-size: 1rem; }
   h5 {
-    font-size: 1rem; }
+    font-size: .8rem; }
   h6 {
-    font-size: 1rem;
-    margin-top: 2rem; }
-  p {
-    font-size: 1.2rem; }
+    margin-top: 2rem;
+    font-size: .8rem; }
   label {
     font-size: .8rem; } }
 
@@ -667,12 +630,21 @@ main {
     padding-top: 150px;
     padding-bottom: 0px; }
 
+@media screen and (max-width: 800px) {
+  #gallery .gallery_img:hover .caption {
+    padding-bottom: 10px; }
+  #gallery .caption {
+    padding-left: 5px;
+    padding-top: 30px; } }
+
 @media screen and (max-width: 480px) {
   #gallery .gallery_img:hover .caption {
     padding-bottom: 5px; }
   #gallery .caption {
     padding-left: 5px;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  #gallery .pictures {
+    margin-bottom: -100px; } }
 
 #brand .brand_cards {
   display: grid;
@@ -694,7 +666,7 @@ main {
     text-align: center;
     color: #fff;
     font-family: "Marcellus", serif;
-    font-size: 1.3rem; }
+    font-size: 1.5vw; }
   #brand .brand_img .mask {
     width: 100%;
     height: 99%;
@@ -721,8 +693,6 @@ main {
   margin: 1rem 0 1rem 3rem; }
 
 @media screen and (max-width: 800px) {
-  #brand .brand_img .caption {
-    font-size: 1rem; }
   #brand p {
     display: grid;
     justify-items: end;
@@ -732,6 +702,4 @@ main {
 
 @media screen and (max-width: 480px) {
   #brand p {
-    font-size: .8rem; }
-  #brand .brand_img .caption {
     font-size: .8rem; } }
