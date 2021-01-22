@@ -59,12 +59,12 @@ h4 {
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.5vw;
   font-family: $font-main2;
 }
 
 h6 {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   font-family: $font-par2;
   margin-top: 2rem;
 }
@@ -99,10 +99,15 @@ label {
   h2 {
     margin-bottom: 2.5rem;
   }
+
+  // h5 {
+  //   font-size: 1.1rem;
+  // }
   
-  h6 {
-    margin-top: 2rem;
-  }
+  // h6 {
+  //   margin-top: 1.8rem;
+  //   font-size: 1rem;
+  // }
   
 }
 
@@ -119,8 +124,16 @@ label {
     margin-bottom: 1rem;
   }
 
-}
+  h5 {
+    font-size: 1.1rem;
+  }
+  
+  h6 {
+    margin-top: 1.8rem;
+    font-size: 1rem;
+  }
 
+}
 
 @media screen and (max-width: 480px) {
   section {

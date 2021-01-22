@@ -47,11 +47,11 @@ h4 {
   font-family: "Marcellus", serif; }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.5vw;
   font-family: "Marcellus", serif; }
 
 h6 {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   font-family: "Roboto Slab", serif;
   margin-top: 2rem; }
 
@@ -75,9 +75,7 @@ label {
   h1 {
     font-size: 3.1rem; }
   h2 {
-    margin-bottom: 2.5rem; }
-  h6 {
-    margin-top: 2rem; } }
+    margin-bottom: 2.5rem; } }
 
 @media screen and (max-width: 800px) {
   section {
@@ -85,7 +83,12 @@ label {
   hr {
     width: 60px; }
   h2 {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  h5 {
+    font-size: 1.1rem; }
+  h6 {
+    margin-top: 1.8rem;
+    font-size: 1rem; } }
 
 @media screen and (max-width: 480px) {
   section {
@@ -396,31 +399,29 @@ main {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity .3s, transform .3s; }
+  .overlay #close {
+    position: absolute;
+    top: 16px;
+    right: 26px;
+    font-size: 32px;
+    cursor: pointer; }
 
 .overlay.show {
   opacity: 1;
   pointer-events: auto; }
-
-.overlay #close {
-  position: absolute;
-  top: 16px;
-  right: 26px;
-  font-size: 32px;
-  cursor: pointer; }
-
-.overlay.show li {
-  opacity: 1;
-  transform: none; }
-  .overlay.show li:nth-child(1) {
-    transition-delay: .1s; }
-  .overlay.show li:nth-child(2) {
-    transition-delay: .2s; }
-  .overlay.show li:nth-child(3) {
-    transition-delay: .3s; }
-  .overlay.show li:nth-child(4) {
-    transition-delay: .4s; }
-  .overlay.show li:nth-child(5) {
-    transition-delay: .5s; }
+  .overlay.show li {
+    opacity: 1;
+    transform: none; }
+    .overlay.show li:nth-child(1) {
+      transition-delay: .1s; }
+    .overlay.show li:nth-child(2) {
+      transition-delay: .2s; }
+    .overlay.show li:nth-child(3) {
+      transition-delay: .3s; }
+    .overlay.show li:nth-child(4) {
+      transition-delay: .4s; }
+    .overlay.show li:nth-child(5) {
+      transition-delay: .5s; }
 
 .sns {
   display: flex;
@@ -511,23 +512,29 @@ main {
   justify-content: space-around; }
 
 #contact h2 {
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem; }
 
 #contact .logo {
   margin-left: 40rem;
   text-align: center; }
 
+#contact .map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; }
+
 #contact .info {
-  margin: 2rem;
-  display: block;
-  justify-items: center; }
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
   #contact .info div {
     display: flex; }
   #contact .info h5 {
     margin-right: 4rem;
     margin-top: 1rem; }
 
-#contact iframe {
+#contact img {
   width: 40vw; }
 
 #contact .submit {
@@ -552,9 +559,7 @@ main {
     margin-left: 20rem;
     text-align: center; }
   #contact .logo1 {
-    display: none; }
-  #contact iframe {
-    height: 380px; } }
+    display: none; } }
 
 @media screen and (max-width: 800px) {
   #contact .logo {
@@ -570,10 +575,11 @@ main {
     flex-direction: column; }
   #contact .map {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-direction: column; }
   #contact .info {
     margin: 1rem 10rem; }
-  #contact iframe {
+  #contact img {
     width: 80%;
     height: 350px; } }
 
@@ -581,8 +587,8 @@ main {
   #contact .info {
     margin: 1rem 2rem; }
   #contact h1 {
-    font-size: 3rem; }
-  #contact iframe {
+    font-size: 2rem; }
+  #contact img {
     width: 90%;
     height: 250px; } }
 
@@ -699,7 +705,3 @@ main {
     margin-right: .9rem; }
   #brand hr {
     margin: 1rem 0 1rem 1rem; } }
-
-@media screen and (max-width: 480px) {
-  #brand p {
-    font-size: .8rem; } }

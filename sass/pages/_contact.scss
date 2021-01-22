@@ -6,18 +6,26 @@
   }
 
   h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .logo {
     margin-left: 40rem;
     text-align: center;
   }
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2rem;
+  }
   
   .info {
-    margin: 2rem;
-    display: block;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     div {
       display: flex;
@@ -29,7 +37,7 @@
     }
   }
 
-  iframe {
+  img {
     width: 40vw;
   }
 
@@ -72,9 +80,9 @@
       display: none;
     }
 
-    iframe {
-      height: 380px;
-    }
+    // img {
+    //   height: 380px;
+    // }
   }
 }
 
@@ -102,13 +110,14 @@
     .map {
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
 
     .info {
       margin: 1rem 10rem;
     }
 
-    iframe {
+    img {
       width: 80%;
       height: 350px;
     }
@@ -124,10 +133,10 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
-    iframe {
+    img {
       width: 90%;
       height: 250px;
     }
